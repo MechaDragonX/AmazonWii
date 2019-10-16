@@ -12,24 +12,24 @@
     "content_scripts": [
       {
         "matches": [
-            "*://*amazon.au/*",
-            "*://*amazon.br/*",
-            "*://*amazon.ca/*",
-            "*://*amazon.cn/*",
-            "*://*amazon.fr/*",
-            "*://*amazon.de/*",
-            "*://*amazon.in/*",
-            "*://*amazon.it/*",
-            "*://*amazon.co.jp/*",
-            "*://*amazon.com.mx/*",
-            "*://*amazon.nl/*",
-            "*://*amazon.sg/*",
-            "*://*amazon.es/*",
-            "*://*amazon.com.tr/*",
-            "*://*amazon.ae/*",
-            "*://*amazon.co.uk/*",
-            "*://*amazon.com/*"
-        ],
+          "*://*.amazon.au/*",
+          "*://*.amazon.br/*",
+          "*://*.amazon.ca/*",
+          "*://*.amazon.cn/*",
+          "*://*.amazon.fr/*",
+          "*://*.amazon.de/*",
+          "*://*.amazon.in/*",
+          "*://*.amazon.it/*",
+          "*://*.amazon.co.jp/*",
+          "*://*.amazon.com.mx/*",
+          "*://*.amazon.nl/*",
+          "*://*.amazon.sg/*",
+          "*://*.amazon.es/*",
+          "*://*.amazon.com.tr/*",
+          "*://*.amazon.ae/*",
+          "*://*.amazon.co.uk/*",
+          "*://*.amazon.com/*"
+      ],
         "js": ["src/content.js"]
       }
     ]

@@ -16,16 +16,15 @@ browser.runtime.onMessage.addListener(function handleMessage(request, sender, se
 browser.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
     currentTab = tab.id;
     // TODO: Add audio files
-    // if(tab.url == "*://*amazon.co.jp/*") /*audio.src = "data/オーディオ.ogg"*/ console.log("アマゾンへようこそ！");
+    // if(tab.url == "*://*amazon.co.jp/*") audio.src = "data/オーディオ.ogg";
     /*else*/ audio.src = "data/audio.ogg";
 });
 
 function playMusic(tabs) {
     if(!playing) {
-    //   audio.load();
+    audio.load();
     playing = true;
-    //   audio.play();
-    console.log("Music playing!");
+    audio.play();
     }
 }
 

@@ -16,8 +16,8 @@ browser.runtime.onMessage.addListener(function handleMessage(request, sender, se
 browser.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
     currentTab = tab.id;
     // TODO: Add audio files
-    if(tab.url == "*://*amazon.co.jp/*") /*audio.src = "data/オーディオ.ogg"*/ console.log("アマゾンへようこそ！");
-    else /*audio.src = "data/audio.ogg"*/ console.log("Welcome to Amazon!");
+    // if(tab.url == "*://*amazon.co.jp/*") /*audio.src = "data/オーディオ.ogg"*/ console.log("アマゾンへようこそ！");
+    /*else*/ audio.src = "data/audio.ogg";
 });
 
 function playMusic(tabs) {
@@ -31,6 +31,7 @@ function playMusic(tabs) {
 
 browser.tabs.onRemoved.addListener(function(tabId, removeInfo) {
     if(tabId == currentTab) {
+        currentTab = null;
         playing = false;
         // audio.remove();
         console.log("Music stopped!");
